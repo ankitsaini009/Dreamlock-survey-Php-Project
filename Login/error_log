@@ -1,0 +1,39 @@
+[06-Jul-2024 21:40:20 UTC] PHP Warning:  include(Login/header.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/Login/index.php on line 1
+[06-Jul-2024 21:40:20 UTC] PHP Warning:  include(): Failed opening 'Login/header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/Login/index.php on line 1
+[06-Jul-2024 21:40:20 UTC] PHP Warning:  include(pages/dashboard.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/Login/index.php on line 143
+[06-Jul-2024 21:40:20 UTC] PHP Warning:  include(): Failed opening 'pages/dashboard.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/Login/index.php on line 143
+[06-Jul-2024 21:59:50 UTC] PHP Warning:  Undefined array key "id" in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 45
+[06-Jul-2024 21:59:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 109
+[06-Jul-2024 21:59:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 110
+[06-Jul-2024 21:59:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 112
+[06-Jul-2024 21:59:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 113
+[06-Jul-2024 21:59:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 114
+[06-Jul-2024 21:59:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 115
+[06-Jul-2024 21:59:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 118
+[06-Jul-2024 21:59:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 119
+[06-Jul-2024 21:59:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 120
+[06-Jul-2024 22:15:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'created_by' in 'where clause' in /home/hlwvkr23wos3/public_html/app.pmt/Login/users.php:40
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/Login/users.php(40): mysqli->query()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/Login/users.php on line 40
+[06-Jul-2024 22:15:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'created_by' in 'where clause' in /home/hlwvkr23wos3/public_html/app.pmt/Login/users.php:40
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/Login/users.php(40): mysqli->query()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/Login/users.php on line 40
+[06-Jul-2024 22:24:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'created_by' in 'where clause' in /home/hlwvkr23wos3/public_html/app.pmt/Login/users.php:40
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/Login/users.php(40): mysqli->query()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/Login/users.php on line 40
+[06-Jul-2024 22:25:54 UTC] PHP Warning:  Undefined array key "id" in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 45
+[06-Jul-2024 22:25:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 109
+[06-Jul-2024 22:25:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 110
+[06-Jul-2024 22:25:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 112
+[06-Jul-2024 22:25:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 113
+[06-Jul-2024 22:25:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 114
+[06-Jul-2024 22:25:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 115
+[06-Jul-2024 22:25:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 118
+[06-Jul-2024 22:25:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 119
+[06-Jul-2024 22:25:54 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/Login/update_user.php on line 120

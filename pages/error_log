@@ -1,0 +1,1090 @@
+[30-Jun-2024 17:17:04 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_client.php on line 3
+[30-Jun-2024 17:17:04 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_client.php on line 3
+[30-Jun-2024 17:17:04 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_client.php on line 6
+[30-Jun-2024 17:17:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_client.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_client.php on line 6
+[30-Jun-2024 17:18:04 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_client.php on line 3
+[30-Jun-2024 17:18:04 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_client.php on line 3
+[30-Jun-2024 17:18:04 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_client.php on line 6
+[30-Jun-2024 17:18:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_client.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_client.php on line 6
+[30-Jun-2024 17:38:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function openConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/edit_supplier.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/edit_supplier.php on line 36
+[30-Jun-2024 17:39:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function openConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/edit_supplier.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/edit_supplier.php on line 36
+[30-Jun-2024 17:43:36 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/edit_supplier.php:36
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/edit_supplier.php(36): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/edit_supplier.php on line 36
+[30-Jun-2024 17:55:13 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 17:55:13 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 17:55:13 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 17:55:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 17:56:15 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 17:56:15 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 17:56:15 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 17:56:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 17:57:55 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 17:57:55 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 17:57:55 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 17:57:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 17:59:03 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 17:59:03 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 17:59:03 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 17:59:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:07:33 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 18:07:33 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 18:07:33 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:07:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:11:37 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 18:11:37 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 18:11:37 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:11:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:14:01 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/edit_supplier.php on line 149
+[30-Jun-2024 18:20:50 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 18:20:50 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 18:20:50 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:20:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:22:42 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 18:22:42 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 18:22:42 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:22:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:29:31 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 18:29:31 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 3
+[30-Jun-2024 18:29:31 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:29:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 6
+[30-Jun-2024 18:31:58 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:38
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php(38): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 38
+[30-Jun-2024 18:34:54 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php:36
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php(36): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 36
+[30-Jun-2024 19:13:45 UTC] PHP Warning:  Undefined array key "panel_size" in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_supplier.php on line 44
+[30-Jun-2024 21:01:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 60
+[30-Jun-2024 21:01:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 60
+[30-Jun-2024 21:01:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 60
+[30-Jun-2024 21:01:21 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 60
+[30-Jun-2024 21:09:34 UTC] PHP Warning:  Undefined array key "client_code" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[30-Jun-2024 21:09:34 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 133
+[30-Jun-2024 21:09:34 UTC] PHP Warning:  Undefined variable $last_complete in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 157
+[30-Jun-2024 21:23:01 UTC] PHP Warning:  Undefined array key "client_code" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[30-Jun-2024 21:23:01 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 133
+[30-Jun-2024 21:23:01 UTC] PHP Warning:  Undefined variable $last_complete in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 157
+[30-Jun-2024 22:09:45 UTC] PHP Warning:  Undefined array key "client_code" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[30-Jun-2024 22:09:45 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 133
+[30-Jun-2024 22:09:45 UTC] PHP Warning:  Undefined variable $last_complete in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 157
+[30-Jun-2024 22:15:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[30-Jun-2024 22:15:35 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:15:35 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:22:42 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[30-Jun-2024 22:29:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[30-Jun-2024 22:30:13 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[30-Jun-2024 22:30:13 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:30:13 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:30:17 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[30-Jun-2024 22:30:17 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:30:17 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:31:05 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[30-Jun-2024 22:31:05 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:31:05 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:36:23 UTC] PHP Warning:  Undefined array key "client_code" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[30-Jun-2024 22:36:23 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 133
+[30-Jun-2024 22:36:23 UTC] PHP Warning:  Undefined variable $last_complete in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 157
+[30-Jun-2024 22:37:08 UTC] PHP Warning:  Undefined array key "client_code" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[30-Jun-2024 22:37:08 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 133
+[30-Jun-2024 22:37:08 UTC] PHP Warning:  Undefined variable $last_complete in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 157
+[30-Jun-2024 22:37:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[30-Jun-2024 22:38:19 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[30-Jun-2024 22:38:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[30-Jun-2024 22:38:50 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:38:50 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:39:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[30-Jun-2024 22:39:40 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:39:40 UTC] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 175
+[30-Jun-2024 22:40:22 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[01-Jul-2024 13:02:23 UTC] PHP Warning:  include(functions.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 2
+[01-Jul-2024 13:02:23 UTC] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 2
+[01-Jul-2024 13:02:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function includeSidebar() in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 18
+[01-Jul-2024 13:02:30 UTC] PHP Warning:  include(functions.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 2
+[01-Jul-2024 13:02:30 UTC] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 2
+[01-Jul-2024 13:02:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function includeSidebar() in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 18
+[01-Jul-2024 13:04:51 UTC] PHP Warning:  include(functions.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 2
+[01-Jul-2024 13:04:51 UTC] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 2
+[01-Jul-2024 13:04:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function includeSidebar() in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 18
+[01-Jul-2024 17:44:39 UTC] PHP Warning:  include(functions.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 3
+[01-Jul-2024 17:44:39 UTC] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 3
+[01-Jul-2024 17:45:54 UTC] PHP Warning:  include(functions.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 3
+[01-Jul-2024 17:45:54 UTC] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 3
+[01-Jul-2024 17:45:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function includeSidebar() in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:132
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 132
+[01-Jul-2024 17:49:15 UTC] PHP Warning:  include(pages/sidebar.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/functions.php on line 4
+[01-Jul-2024 17:49:15 UTC] PHP Warning:  include(): Failed opening 'pages/sidebar.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/functions.php on line 4
+[01-Jul-2024 17:54:45 UTC] PHP Fatal error:  Cannot redeclare includeSidebar() (previously declared in /home/hlwvkr23wos3/public_html/app.pmt/pages/functions.php:4) in /home/hlwvkr23wos3/public_html/app.pmt/pages/functions.php on line 4
+[01-Jul-2024 17:55:01 UTC] PHP Warning:  include(/home/hlwvkr23wos3/public_html/app.pmt/pagespages/sidebar.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/functions.php on line 4
+[01-Jul-2024 17:55:01 UTC] PHP Warning:  include(): Failed opening '/home/hlwvkr23wos3/public_html/app.pmt/pagespages/sidebar.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/functions.php on line 4
+[01-Jul-2024 18:07:14 UTC] PHP Warning:  include(pages/functions.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 3
+[01-Jul-2024 18:07:14 UTC] PHP Warning:  include(): Failed opening 'pages/functions.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 3
+[01-Jul-2024 18:07:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function includeSidebar() in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:131
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 131
+[01-Jul-2024 18:15:41 UTC] PHP Warning:  include(functions.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 2
+[01-Jul-2024 18:15:41 UTC] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 2
+[01-Jul-2024 18:15:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 39
+[01-Jul-2024 18:15:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function includeSidebar() in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:89
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 89
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 37
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 298
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 318
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 318
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 318
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 318
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Undefined variable $filters in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 318
+[01-Jul-2024 18:20:37 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 318
+[01-Jul-2024 19:43:55 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 19:43:55 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 19:43:55 UTC] PHP Warning:  include(supplier_mapping.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 19:43:55 UTC] PHP Warning:  include(): Failed opening 'supplier_mapping.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 19:45:45 UTC] PHP Warning:  include(pages/project_details.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 19:45:45 UTC] PHP Warning:  include(): Failed opening 'pages/project_details.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 19:45:45 UTC] PHP Warning:  include(supplier_mapping.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 19:45:45 UTC] PHP Warning:  include(): Failed opening 'supplier_mapping.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 19:46:40 UTC] PHP Fatal error:  Cannot redeclare openConnection() (previously declared in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:8) in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 8
+[01-Jul-2024 19:46:49 UTC] PHP Fatal error:  Cannot redeclare openConnection() (previously declared in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:8) in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 8
+[01-Jul-2024 19:50:09 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 19:50:09 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 19:50:09 UTC] PHP Warning:  include(supplier_mapping.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 19:50:09 UTC] PHP Warning:  include(): Failed opening 'supplier_mapping.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 19:52:07 UTC] PHP Fatal error:  Cannot redeclare openConnection() (previously declared in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:8) in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 20
+[01-Jul-2024 19:56:42 UTC] PHP Fatal error:  Cannot redeclare openConnection() (previously declared in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:8) in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 20
+[01-Jul-2024 19:59:00 UTC] PHP Fatal error:  Cannot redeclare safeOutput() (previously declared in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:27) in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 5
+[01-Jul-2024 20:05:44 UTC] PHP Fatal error:  Cannot redeclare safeOutput() (previously declared in /home/hlwvkr23wos3/public_html/app.pmt/pages/functions.php:27) in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 5
+[01-Jul-2024 20:05:58 UTC] PHP Fatal error:  Cannot redeclare safeOutput() (previously declared in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:27) in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 5
+[01-Jul-2024 20:10:53 UTC] PHP Fatal error:  Cannot redeclare getClientCode() (previously declared in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:4) in /home/hlwvkr23wos3/public_html/app.pmt/pages/functions.php on line 31
+[01-Jul-2024 20:11:12 UTC] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 2
+[01-Jul-2024 20:11:12 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 2
+[01-Jul-2024 20:11:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function openConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 28
+[01-Jul-2024 20:11:35 UTC] PHP Fatal error:  Cannot redeclare safeOutput() (previously declared in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:27) in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 5
+[01-Jul-2024 20:12:12 UTC] PHP Warning:  include(sidebar.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 14
+[01-Jul-2024 20:12:12 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 14
+[01-Jul-2024 20:12:12 UTC] PHP Warning:  include(supplier_mapping.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:12:12 UTC] PHP Warning:  include(): Failed opening 'supplier_mapping.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:13:41 UTC] PHP Warning:  include(sidebar.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 14
+[01-Jul-2024 20:13:41 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 14
+[01-Jul-2024 20:13:41 UTC] PHP Warning:  include(supplier_mapping.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:13:41 UTC] PHP Warning:  include(): Failed opening 'supplier_mapping.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:13:48 UTC] PHP Warning:  include(sidebar.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 14
+[01-Jul-2024 20:13:48 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details_content.php on line 14
+[01-Jul-2024 20:13:48 UTC] PHP Warning:  include(supplier_mapping.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:13:48 UTC] PHP Warning:  include(): Failed opening 'supplier_mapping.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:17:29 UTC] PHP Warning:  include(supplier_mapping.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:17:29 UTC] PHP Warning:  include(): Failed opening 'supplier_mapping.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:22:44 UTC] PHP Warning:  include(supplier_mapping.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:22:44 UTC] PHP Warning:  include(): Failed opening 'supplier_mapping.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:25:27 UTC] PHP Warning:  include(supplier_mapping.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:25:27 UTC] PHP Warning:  include(): Failed opening 'supplier_mapping.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 221
+[01-Jul-2024 20:28:16 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 20:28:16 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 20:28:19 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 20:28:19 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "project_name" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 84
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "project_description" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 85
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "client" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 86
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "project_country" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 87
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "LOI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 88
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "sample_size" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 89
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "start_date" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 90
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "end_date" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 91
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "IR" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 92
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "respondent_click_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 95
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "live_link" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 97
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  Undefined array key "test_link" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 98
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 20:30:04 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 20:30:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'supplier_quota' in 'field list' in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php:15
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php(15): mysqli->prepare()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php(221): include('/home/hlwvkr23w...')
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 15
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "project_name" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 84
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "project_description" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 85
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "client" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 86
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "project_country" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 87
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "LOI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 88
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "sample_size" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 89
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "start_date" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 90
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "end_date" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 91
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "IR" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 92
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "respondent_click_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 95
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "live_link" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 97
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  Undefined array key "test_link" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 98
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 20:30:17 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 20:30:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'supplier_quota' in 'field list' in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php:15
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php(15): mysqli->prepare()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php(221): include('/home/hlwvkr23w...')
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 15
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 218
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 321
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 321
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 321
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 321
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 321
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 321
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 321
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 321
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 341
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 341
+[01-Jul-2024 20:30:28 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 341
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 20:31:27 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 181
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 181
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 181
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 181
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 181
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 181
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 181
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 181
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 201
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 201
+[01-Jul-2024 20:32:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 201
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 223
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 223
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 223
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 223
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 223
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 223
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 223
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 223
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[01-Jul-2024 20:32:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[01-Jul-2024 20:34:07 UTC] PHP Warning:  Undefined array key "client_code" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[01-Jul-2024 20:34:07 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 133
+[01-Jul-2024 20:34:07 UTC] PHP Warning:  Undefined variable $last_complete in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 157
+[01-Jul-2024 20:34:55 UTC] PHP Warning:  Undefined array key "client_code" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[01-Jul-2024 20:34:55 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 133
+[01-Jul-2024 20:34:55 UTC] PHP Warning:  Undefined variable $last_complete in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 157
+[01-Jul-2024 20:35:16 UTC] PHP Warning:  Undefined array key "client_code" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[01-Jul-2024 20:35:16 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 133
+[01-Jul-2024 20:35:16 UTC] PHP Warning:  Undefined variable $last_complete in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 157
+[01-Jul-2024 20:35:45 UTC] PHP Warning:  Undefined array key "client_code" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 93
+[01-Jul-2024 20:35:45 UTC] PHP Warning:  Undefined array key "device_filters" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 133
+[01-Jul-2024 20:35:45 UTC] PHP Warning:  Undefined variable $last_complete in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 157
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 20:39:48 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 304
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 20:39:51 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 327
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 327
+[01-Jul-2024 20:40:38 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 327
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 327
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 327
+[01-Jul-2024 20:40:41 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 327
+[01-Jul-2024 20:40:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function safeOutput() in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 27
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 307
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 327
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 327
+[01-Jul-2024 20:41:31 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 327
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 323
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 323
+[01-Jul-2024 20:42:50 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 323
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 320
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 320
+[01-Jul-2024 20:43:38 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 320
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 320
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 320
+[01-Jul-2024 20:44:02 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 320
+[01-Jul-2024 20:44:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function safeOutput() in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 27
+[01-Jul-2024 20:48:25 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 20:48:25 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 20:48:25 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 20:48:25 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 20:48:25 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 20:48:25 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 20:48:25 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 20:48:25 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 333
+[01-Jul-2024 20:48:25 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 333
+[01-Jul-2024 20:48:25 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 333
+[01-Jul-2024 20:48:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:13
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(25): logSurveyRedirect()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 13
+[01-Jul-2024 20:48:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:13
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(25): logSurveyRedirect()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 13
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 348
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 348
+[01-Jul-2024 21:07:31 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 348
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:08:54 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:08:57 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:09:10 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:09:10 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:09:10 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:09:10 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:09:10 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:09:10 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:09:10 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:09:10 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:09:10 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:09:10 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:10:18 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 314
+[01-Jul-2024 21:10:18 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 314
+[01-Jul-2024 21:10:18 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 314
+[01-Jul-2024 21:10:18 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 314
+[01-Jul-2024 21:10:18 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 314
+[01-Jul-2024 21:10:18 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 314
+[01-Jul-2024 21:10:18 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 314
+[01-Jul-2024 21:10:18 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 334
+[01-Jul-2024 21:10:18 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 334
+[01-Jul-2024 21:10:18 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 334
+[01-Jul-2024 21:11:17 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 21:11:17 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 21:11:17 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 21:11:17 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 21:11:17 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 21:11:17 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 21:11:17 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 313
+[01-Jul-2024 21:11:17 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 333
+[01-Jul-2024 21:11:17 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 333
+[01-Jul-2024 21:11:17 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 333
+[01-Jul-2024 21:12:15 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 21:12:15 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 21:12:15 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 21:12:15 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 21:12:15 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 21:12:15 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 21:12:15 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 300
+[01-Jul-2024 21:12:15 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 320
+[01-Jul-2024 21:12:15 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 320
+[01-Jul-2024 21:12:15 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 320
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 348
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 348
+[01-Jul-2024 21:15:54 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 348
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 328
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 348
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 348
+[01-Jul-2024 21:16:08 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 348
+[01-Jul-2024 21:16:51 UTC] PHP Warning:  include(project_details_content.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 21:16:51 UTC] PHP Warning:  include(): Failed opening 'project_details_content.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 303
+[01-Jul-2024 21:17:30 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:17:30 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:17:30 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:17:30 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:17:30 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:17:30 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:17:30 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 324
+[01-Jul-2024 21:17:30 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:17:30 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:17:30 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 344
+[01-Jul-2024 21:18:35 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:18:35 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:18:35 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:18:35 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:18:35 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:18:35 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:18:35 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:18:35 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:18:35 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:18:35 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:18:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function safeOutput() in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 1
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:27:36 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:27:56 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:56 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:56 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:56 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:56 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:56 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:56 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:27:56 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:27:56 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:27:56 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:28:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'pmtool_db.SupplierMappings' doesn't exist in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php:81
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php(81): mysqli->prepare()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 81
+[01-Jul-2024 21:31:23 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:31:23 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:31:23 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:31:23 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:31:23 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:31:23 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:31:23 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:31:23 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:31:23 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:31:23 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:36:38 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:36:38 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:36:38 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:36:38 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:36:38 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:36:38 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:36:38 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:36:38 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:36:38 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:36:38 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:45:11 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:45:11 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:45:11 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:45:11 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:45:11 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:45:11 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:45:11 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:45:11 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 336
+[01-Jul-2024 21:45:11 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 336
+[01-Jul-2024 21:45:11 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 336
+[01-Jul-2024 21:50:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function safeOutput() in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:88
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 88
+[01-Jul-2024 21:51:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function safeOutput() in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php:88
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 88
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 311
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:51:29 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 331
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 336
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 336
+[01-Jul-2024 21:51:47 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 336
+[01-Jul-2024 21:56:55 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 156
+[01-Jul-2024 21:56:55 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 156
+[01-Jul-2024 21:56:55 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 173
+[01-Jul-2024 21:56:55 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php:162
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(162): mysqli_query()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(173): generateProjectCode()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 162
+[01-Jul-2024 22:00:48 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 156
+[01-Jul-2024 22:00:48 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 156
+[01-Jul-2024 22:00:48 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 173
+[01-Jul-2024 22:00:48 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php:162
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(162): mysqli_query()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(173): generateProjectCode()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 162
+[01-Jul-2024 22:07:20 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php:63
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 63
+[01-Jul-2024 22:13:23 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 156
+[01-Jul-2024 22:13:23 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 156
+[01-Jul-2024 22:13:23 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 173
+[01-Jul-2024 22:13:23 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php:162
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(162): mysqli_query()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(173): generateProjectCode()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 162
+[01-Jul-2024 22:15:29 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 128
+[01-Jul-2024 22:15:29 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 128
+[01-Jul-2024 22:15:29 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 145
+[01-Jul-2024 22:15:29 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php:134
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(134): mysqli_query()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(145): generateProjectCode()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 134
+[01-Jul-2024 22:16:14 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 128
+[01-Jul-2024 22:16:14 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 128
+[01-Jul-2024 22:16:14 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 145
+[01-Jul-2024 22:16:14 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php:134
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(134): mysqli_query()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(145): generateProjectCode()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 134
+[01-Jul-2024 22:17:16 UTC] PHP Warning:  include(db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 128
+[01-Jul-2024 22:17:16 UTC] PHP Warning:  include(): Failed opening 'db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 128
+[01-Jul-2024 22:17:16 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 145
+[01-Jul-2024 22:17:16 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php:134
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(134): mysqli_query()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(145): generateProjectCode()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 134
+[01-Jul-2024 22:26:21 UTC] PHP Warning:  include(pages/db2.php): Failed to open stream: No such file or directory in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 156
+[01-Jul-2024 22:26:21 UTC] PHP Warning:  include(): Failed opening 'pages/db2.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 156
+[01-Jul-2024 22:26:21 UTC] PHP Warning:  Undefined variable $conn in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 173
+[01-Jul-2024 22:26:21 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php:162
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(162): mysqli_query()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php(173): generateProjectCode()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/add_project.php on line 162
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 316
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 336
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 336
+[02-Jul-2024 12:16:31 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 336
+[02-Jul-2024 13:29:02 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php:63
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 63
+[02-Jul-2024 15:22:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function closeConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php on line 34
+[02-Jul-2024 15:23:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function closeConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php on line 34
+[02-Jul-2024 15:23:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function closeConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php on line 34
+[02-Jul-2024 15:31:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function closeConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php on line 34
+[02-Jul-2024 15:32:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function closeConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php on line 34
+[02-Jul-2024 15:32:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function closeConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php on line 34
+[02-Jul-2024 15:32:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function closeConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php on line 34
+[02-Jul-2024 15:32:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function closeConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php on line 34
+[02-Jul-2024 15:32:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function closeConnection() in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/get_supplier_urls.php on line 34
+[02-Jul-2024 15:34:57 UTC] PHP Warning:  Undefined array key "Supplier_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 152
+[02-Jul-2024 15:34:57 UTC] PHP Warning:  Undefined array key "Click_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 153
+[02-Jul-2024 15:34:57 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 154
+[02-Jul-2024 15:34:57 UTC] PHP Warning:  Undefined array key "Complete_URL" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 155
+[02-Jul-2024 15:34:57 UTC] PHP Warning:  Undefined array key "Terminate_URL" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 156
+[02-Jul-2024 15:37:15 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php:63
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php(63): mysqli_stmt->bind_param()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 63
+[02-Jul-2024 15:40:12 UTC] PHP Warning:  Undefined array key "Supplier_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 152
+[02-Jul-2024 15:40:12 UTC] PHP Warning:  Undefined array key "Click_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 153
+[02-Jul-2024 15:40:12 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 154
+[02-Jul-2024 15:40:12 UTC] PHP Warning:  Undefined array key "Complete_URL" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 155
+[02-Jul-2024 15:40:12 UTC] PHP Warning:  Undefined array key "Terminate_URL" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 156
+[02-Jul-2024 15:40:14 UTC] PHP Warning:  Undefined array key "Supplier_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 152
+[02-Jul-2024 15:40:14 UTC] PHP Warning:  Undefined array key "Click_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 153
+[02-Jul-2024 15:40:14 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 154
+[02-Jul-2024 15:40:14 UTC] PHP Warning:  Undefined array key "Complete_URL" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 155
+[02-Jul-2024 15:40:14 UTC] PHP Warning:  Undefined array key "Terminate_URL" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 156
+[02-Jul-2024 15:58:20 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 58
+[02-Jul-2024 15:58:34 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 58
+[02-Jul-2024 15:59:02 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 58
+[02-Jul-2024 16:58:16 UTC] PHP Warning:  Undefined array key "supplier_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 157
+[02-Jul-2024 16:58:16 UTC] PHP Warning:  Undefined array key "click_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 158
+[02-Jul-2024 16:58:16 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 159
+[02-Jul-2024 16:58:16 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 160
+[02-Jul-2024 16:58:16 UTC] PHP Warning:  Undefined array key "test_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 161
+[02-Jul-2024 16:58:16 UTC] PHP Warning:  Undefined array key "supplier_identifier" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 162
+[02-Jul-2024 17:02:05 UTC] PHP Warning:  Undefined array key "supplier_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 157
+[02-Jul-2024 17:02:05 UTC] PHP Warning:  Undefined array key "click_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 158
+[02-Jul-2024 17:02:05 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 159
+[02-Jul-2024 17:02:05 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 160
+[02-Jul-2024 17:02:05 UTC] PHP Warning:  Undefined array key "test_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 161
+[02-Jul-2024 17:02:05 UTC] PHP Warning:  Undefined array key "supplier_identifier" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 162
+[02-Jul-2024 17:02:31 UTC] PHP Warning:  Undefined array key "Supplier_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 152
+[02-Jul-2024 17:02:31 UTC] PHP Warning:  Undefined array key "Click_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 153
+[02-Jul-2024 17:02:31 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 154
+[02-Jul-2024 17:02:31 UTC] PHP Warning:  Undefined array key "Complete_URL" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 155
+[02-Jul-2024 17:02:31 UTC] PHP Warning:  Undefined array key "Terminate_URL" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 156
+[02-Jul-2024 17:04:37 UTC] PHP Warning:  Undefined array key "supplier_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 156
+[02-Jul-2024 17:04:37 UTC] PHP Warning:  Undefined array key "click_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 157
+[02-Jul-2024 17:04:37 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 158
+[02-Jul-2024 17:04:37 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 159
+[02-Jul-2024 17:04:37 UTC] PHP Warning:  Undefined array key "test_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 160
+[02-Jul-2024 17:04:37 UTC] PHP Warning:  Undefined array key "supplier_identifier" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 161
+[02-Jul-2024 17:06:17 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 58
+[02-Jul-2024 17:36:56 UTC] PHP Warning:  Undefined array key "Supplier_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 163
+[02-Jul-2024 17:36:56 UTC] PHP Warning:  Undefined array key "Click_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 164
+[02-Jul-2024 17:36:56 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 165
+[02-Jul-2024 17:36:56 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 166
+[02-Jul-2024 17:36:56 UTC] PHP Warning:  Undefined array key "terminate_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 167
+[02-Jul-2024 17:47:55 UTC] PHP Warning:  Undefined array key "supplier_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 156
+[02-Jul-2024 17:47:55 UTC] PHP Warning:  Undefined array key "click_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 157
+[02-Jul-2024 17:47:55 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 158
+[02-Jul-2024 17:47:55 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 159
+[02-Jul-2024 17:47:55 UTC] PHP Warning:  Undefined array key "terminate_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 160
+[02-Jul-2024 17:54:22 UTC] PHP Warning:  Undefined array key "supplier_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 156
+[02-Jul-2024 17:54:22 UTC] PHP Warning:  Undefined array key "click_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 157
+[02-Jul-2024 17:54:22 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 158
+[02-Jul-2024 17:54:22 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 159
+[02-Jul-2024 17:54:22 UTC] PHP Warning:  Undefined array key "terminate_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 160
+[02-Jul-2024 17:54:48 UTC] PHP Warning:  Undefined array key "supplier_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 156
+[02-Jul-2024 17:54:48 UTC] PHP Warning:  Undefined array key "click_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 157
+[02-Jul-2024 17:54:48 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 158
+[02-Jul-2024 17:54:48 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 159
+[02-Jul-2024 17:54:48 UTC] PHP Warning:  Undefined array key "terminate_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 160
+[02-Jul-2024 17:56:08 UTC] PHP Warning:  Undefined array key "Supplier_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 152
+[02-Jul-2024 17:56:08 UTC] PHP Warning:  Undefined array key "Click_Quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 153
+[02-Jul-2024 17:56:08 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 154
+[02-Jul-2024 17:56:08 UTC] PHP Warning:  Undefined array key "Complete_URL" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 155
+[02-Jul-2024 17:56:08 UTC] PHP Warning:  Undefined array key "Terminate_URL" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 156
+[02-Jul-2024 18:01:05 UTC] PHP Warning:  Undefined array key "supplier_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 156
+[02-Jul-2024 18:01:05 UTC] PHP Warning:  Undefined array key "click_quota" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 157
+[02-Jul-2024 18:01:05 UTC] PHP Warning:  Undefined array key "CPI" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 158
+[02-Jul-2024 18:01:05 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 159
+[02-Jul-2024 18:01:05 UTC] PHP Warning:  Undefined array key "test_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 160
+[02-Jul-2024 18:01:05 UTC] PHP Warning:  Undefined array key "supplier_identifier" in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 161
+[02-Jul-2024 18:02:12 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 58
+[02-Jul-2024 18:02:18 UTC] PHP Warning:  Undefined array key "complete_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 58
+[02-Jul-2024 22:52:54 UTC] PHP Parse error:  syntax error, unexpected token "endforeach", expecting end of file in /home/hlwvkr23wos3/public_html/app.pmt/pages/supplier_mapping.php on line 256
+[02-Jul-2024 22:54:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 48
+[02-Jul-2024 22:54:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 61
+[02-Jul-2024 22:54:31 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 48
+[02-Jul-2024 22:54:31 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 64
+[02-Jul-2024 23:01:53 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 48
+[02-Jul-2024 23:01:53 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 73
+[02-Jul-2024 23:06:15 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 48
+[02-Jul-2024 23:06:15 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 61
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "geo_location" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "unique_ip_count" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "proxy_vpn" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "tsign" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "captcha" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "pre_screen" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "url_protection" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "dynamic_thanks_url" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 243
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "mobile_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 263
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "tablet_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 263
+[02-Jul-2024 23:13:54 UTC] PHP Warning:  Undefined array key "desktop_study" in /home/hlwvkr23wos3/public_html/app.pmt/pages/project_details.php on line 263
+[02-Jul-2024 23:37:08 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 67
+[02-Jul-2024 23:40:17 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 67
+[02-Jul-2024 23:42:49 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 67
+[02-Jul-2024 23:55:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 48
+[02-Jul-2024 23:55:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 61
+[03-Jul-2024 00:02:59 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 67
+[03-Jul-2024 01:30:49 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 56
+[03-Jul-2024 01:44:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 67
+[03-Jul-2024 01:45:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'supplier_id' in 'field list' in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:49
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(49): mysqli->prepare()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 49
+[03-Jul-2024 01:48:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'supplier_id' in 'field list' in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:56
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(56): mysqli->prepare()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 56
+[03-Jul-2024 01:50:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'supplier_id' in 'field list' in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:56
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(56): mysqli->prepare()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 56
+[03-Jul-2024 01:51:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 67
+[03-Jul-2024 11:36:49 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 67
+[03-Jul-2024 11:38:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 67
+[03-Jul-2024 11:45:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'supplier_id' in 'field list' in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:56
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(56): mysqli->prepare()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 56
+[03-Jul-2024 11:45:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 11:51:22 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:40
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(40): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(55): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 40
+[03-Jul-2024 11:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 11:56:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 12:01:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'supplier_id' in 'field list' in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:56
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(56): mysqli->prepare()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 56
+[03-Jul-2024 12:03:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 12:04:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'supplier_id' in 'field list' in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:60
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(60): mysqli->prepare()
+#1 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 60
+[03-Jul-2024 12:06:21 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(77): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 44
+[03-Jul-2024 12:07:25 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 12:41:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 12:41:42 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 12:58:16 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php(77): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/start_survey.php on line 44
+[03-Jul-2024 12:58:33 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 43
+[03-Jul-2024 12:58:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getRedirectLink() in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php:92
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 92
+[03-Jul-2024 13:14:28 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 43
+[03-Jul-2024 13:14:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getRedirectLink() in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php:92
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 92
+[03-Jul-2024 13:14:30 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 43
+[03-Jul-2024 13:14:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getRedirectLink() in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php:92
+Stack trace:
+#0 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 92
+[03-Jul-2024 13:15:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 13:16:20 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 13:19:56 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 13:19:59 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 13:20:02 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 13:20:23 UTC] Error: Project code not found.
+[03-Jul-2024 13:20:37 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 13:26:16 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 13:32:54 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 13:39:18 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 14:02:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 14:06:33 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 14:09:43 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 14:12:09 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 14:15:27 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 14:27:50 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 14:56:33 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 15:01:38 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 15:02:55 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php:44
+Stack trace:
+#0 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(44): mysqli_stmt->bind_param()
+#1 /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php(157): logSurveyStart()
+#2 {main}
+  thrown in /home/hlwvkr23wos3/public_html/app.pmt/pages/survey_handler.php on line 44
+[03-Jul-2024 15:03:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 15:10:50 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 15:11:35 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
+[03-Jul-2024 15:12:15 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/hlwvkr23wos3/public_html/app.pmt/pages/end_survey.php on line 81
