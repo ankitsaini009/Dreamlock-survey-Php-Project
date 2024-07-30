@@ -1,83 +1,3 @@
-<?php
-function openConnection() {
-    $hostname = 'localhost';
-    $username = 'root';
-    $password = '';
-    $database = 'pmtool_db';
-    $port = 3306;
-
-    $conn = new mysqli($hostname, $username, $password, $database, $port);
-    if ($conn->connect_error) {
-        error_log("Connection failed: " . $conn->connect_error);
-        die("Connection failed: " . $conn->connect_error);
-    }
-    return $conn;
-}
-
-function closeConnection($conn) {
-    $conn->close();
-}
-
-function generateHashIdentifier() {
-    return bin2hex(random_bytes(16));
-}
-
-function logSurveyStart($project_code, $supplier_identifier, $hash_identifier) {
-    $conn = openConnection();
-    $sql = "INSERT INTO SurveyLog (project_code, status, time_stamp, Hash_Identifier, Supplier_Identifier) VALUES (?, 'start', NOW(), ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sss", $project_code, $hash_identifier, $supplier_identifier);
-    $stmt->execute();
-    $stmt->close();
-    closeConnection($conn);
-}
-
-if (isset($_GET['project_code']) && isset($_GET['supplier_identifier'])) {
-    $project_code = $_GET['project_code'];
-    $supplier_identifier = $_GET['supplier_identifier'];
-    $hash_identifier = generateHashIdentifier();
-
-    // Log the survey start with the unique hash identifier
-    logSurveyStart($project_code, $supplier_identifier, $hash_identifier);
-
-    $conn = openConnection();
-    $sql = "SELECT links FROM ProjectDetails WHERE project_code = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $project_code);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    
-    if ($result->num_rows > 0) {
-        $project = $result->fetch_assoc();
-        $stmt->close();
-        closeConnection($conn);
-
-       
-        $links = json_decode($project['links'], true);
-        if (isset($links[0]['live'])) {
-            $client_survey_url = $links[0]['live'];
-
-            $client_survey_url = str_replace('[identifier]', $hash_identifier, $client_survey_url);
-
-            $html_file_path = './feedback.php'; 
-
-            header("X-Custom-File-Path: $html_file_path");
-  
-            readfile($html_file_path);
-            exit();
-        } else {
-            die("Error: 'live' link not found in project details.");
-        }
-    } else {
-        $stmt->close();
-        closeConnection($conn);
-        die("Error: Project code not found.");
-    }
-} else {
-    die("Invalid request.");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -89,22 +9,22 @@ if (isset($_GET['project_code']) && isset($_GET['supplier_identifier'])) {
     <title>Satisfyc | Satisfaction Survey form Wizard</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    <link rel="shortcut icon" href="../assets/feedback/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="../assets/feedback/img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../assets/feedback/img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="../assets/feedback/img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../assets/feedback/img/apple-touch-icon-144x144-precomposed.png">
 
     <!-- GOOGLE WEB FONT -->
     <link href="https://fonts.googleapis.com/css?family=Caveat|Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
     <!-- BASE CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-	<link href="css/vendors.css" rel="stylesheet">
+    <link href="../assets/feedback/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/feedback/css/style.css" rel="stylesheet">
+	<link href="../assets/feedback/css/vendors.css" rel="stylesheet">
 
     <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="../assets/feedback/css/custom.css" rel="stylesheet">
 
 </head>
 
@@ -122,7 +42,7 @@ if (isset($_GET['project_code']) && isset($_GET['supplier_identifier'])) {
 	    <div class="container-fluid">
 	        <div class="row">
 	            <div class="col-5">
-	                <a href="index.html"><img src="img/logo.svg" alt="" width="50" height="55"></a>
+	                <a href="index.html"><img src="../assets/feedback/img/logo.svg" alt="" width="50" height="55"></a>
 	            </div>
 	            <div class="col-7">
 	                <div id="social">
@@ -443,12 +363,12 @@ if (isset($_GET['project_code']) && isset($_GET['supplier_identifier'])) {
 	<!-- /.modal -->
 	
 	<!-- COMMON SCRIPTS -->
-	<script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/common_scripts.min.js"></script>
-	<script src="js/functions.js"></script>
+	<script src="../assets/feedback/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/feedback/js/common_scripts.min.js"></script>
+	<script src="../assets/feedback/js/functions.js"></script>
 
 	<!-- Wizard script -->
-	<script src="js/survey_func.js"></script>
+	<script src="../assets/feedback/js/survey_func.js"></script>
 
 </body>
 </html>

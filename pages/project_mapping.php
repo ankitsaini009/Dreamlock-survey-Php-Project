@@ -9,6 +9,28 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+function loadEnv($file) {
+    if (file_exists($file)) {
+        $lines = file($file);
+        foreach ($lines as $line) {
+            // Remove comments and whitespace
+            $line = trim($line);
+            if (empty($line) || $line[0] === '#') {
+                continue;
+            }
+            // Split the line into key and value
+            list($key, $value) = explode('=', $line, 2);
+            $key = trim($key);
+            $value = trim($value);
+            $_ENV[$key] = $value;
+            putenv("$key=$value");
+        }
+    }
+}
+
+// Load the .env file
+loadEnv(__DIR__ . '../../.env'); 
+
 function openConnection()
 {
     $hostname = 'localhost';
@@ -242,14 +264,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($supplier_mappings as $index => $mapping) : ?>
-                                <tr>
-                                    <td class="px-6 py-4 border-b border-gray-300"><?= $index + 1 ?></td>
-                                    <td class="px-6 py-4 border-b border-gray-300"><?= safeOutput($mapping['supplier_name']) ?></td>
-                                    <td class="px-6 py-4 border-b border-gray-300"><?= "https://dreamlockmr.com/app.pmt/pages/start_survey.php?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) ?></td>
-                                    <td class="px-6 py-4 border-b border-gray-300"><?= "https://dreamlockmr.com/app.pmt/pages/start_survey.php?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) . "&status=test" ?></td>
-                                </tr>
-                            <?php endforeach; ?>
+                        <?php
+                                    $base_url = getenv('PROJECT_URL'); 
+
+                                    foreach ($supplier_mappings as $index => $mapping) :
+                                    ?>
+                                        <tr>
+                                            <td class="px-6 py-4 border-b border-gray-300"><?= $index + 1 ?></td>
+                                            <td class="px-6 py-4 border-b border-gray-300"><?= safeOutput($mapping['supplier_name']) ?></td>
+                                            <td class="px-6 py-4 border-b border-gray-300"><?= $base_url . "?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) ?></td>
+                                            <td class="px-6 py-4 border-b border-gray-300"><?= $base_url . "?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) . "&status=test" ?></td>
+                                        </tr>
+                                    <?php
+                                    endforeach;
+                                    ?>
+
+
                         </tbody>
 
                     </table>
