@@ -4,6 +4,12 @@ include '../include/navbar.php';
 include '../db2.php';
 ?>
 <?php
+$message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
+$message_type = isset($_SESSION['message_type']) ? $_SESSION['message_type'] : '';
+unset($_SESSION['message']);
+unset($_SESSION['message_type']);
+?>
+<?php
 function safeOutput($string)
 {
     return htmlspecialchars($string ?? '');
@@ -16,7 +22,7 @@ $result = $conn->query($sql);
 $questions = [];
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        $questions[] = ['title' => $row["title"], 'question' => $row["question_text"]];
+        $questions[] = ['title' => $row["title"], 'question' => $row["question_text"], 'id' => $row["id"]];
     }
 }
 
@@ -34,14 +40,18 @@ function searchQuestions($query, $questions)
 if (isset($_GET['query'])) {
     $query = $_GET['query'];
     $results = searchQuestions($query, $questions);
-
+    // echo "<pre>";
+    // print_r($results);
+    // echo "</pre>";
+    // die();
     if (empty($results)) {
         echo "<p style=\"background: #cab2ff4f; cursor: pointer; padding: 4px 8px; color: #393636; border-radius: 4px; margin:4px 0px;\">No questions found.</p>";
     } else {
         foreach ($results as $result) {
-            echo "<p style=\"background: #cab2ff4f; cursor: pointer; padding: 4px 8px; color: #393636; border-radius: 4px; margin:4px 0px;\" data-title=\"" . safeOutput($result['title']) . "\" data-question=\"" . safeOutput($result['question']) . "\">" . safeOutput($result['question']) . "</p>";
+            echo "<p style=\"background: #cab2ff4f; cursor: pointer; padding: 4px 8px; color: #393636; border-radius: 4px; margin:4px 0px;\" data-id=\"" . safeOutput($result['id']) . "\" data-title=\"" . safeOutput($result['title']) . "\" data-question=\"" . safeOutput($result['question']) . "\">" . safeOutput($result['question']) . "</p>";
         }
     }
+
     exit;
 }
 // ===========================================================================================================
@@ -130,6 +140,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $conn->close();
 }
 
+
+$fetchQuestion = "SELECT sq.id, q.title, q.question_text, sq.control_type
+          FROM survey_questions sq
+          JOIN questionnaire q ON sq.question_id = q.id";
+$tableData = $conn->query($fetchQuestion);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -160,41 +175,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             width: 400px
         }
     </style>
-<script>
-    function searchQuestions(query) {
-        if (query.length == 0) {
-            document.getElementById("tesjd").innerHTML = "";
-            return;
-        }
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-                var parser = new DOMParser();
-                var doc = parser.parseFromString(xhr.responseText, 'text/html');
-                var mainPanelContent = doc.querySelector('.main-panel').innerHTML;
-                document.getElementById("tesjd").innerHTML = mainPanelContent;
-                console.log('Extracted Content: ' + mainPanelContent);
-
-                // Add click event listeners to search results
-                document.querySelectorAll('#tesjd p').forEach(function(p) {
-                    p.addEventListener('click', function() {
-                        displayResult(p);
-                    });
-                });
+    <script>
+        function searchQuestions(query) {
+            if (query.length == 0) {
+                document.getElementById("tesjd").innerHTML = "";
+                return;
             }
-        };
-        xhr.open("GET", "?query=" + query, true);
-        xhr.send();
-    }
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var parser = new DOMParser();
+                    var doc = parser.parseFromString(xhr.responseText, 'text/html');
+                    var mainPanelContent = doc.querySelector('.main-panel').innerHTML;
+                    document.getElementById("tesjd").innerHTML = mainPanelContent;
+                    console.log('Extracted Content: ' + mainPanelContent);
 
-    function displayResult(element) {
-        console.log(element);
-        var title = element.getAttribute('data-title');
-        var question = element.getAttribute('data-question');
-        document.getElementById('title-display').innerText = title;
-        document.getElementById('question-display').innerText = question;
-    }
-</script>
+                    // Add click event listeners to search results
+                    document.querySelectorAll('#tesjd p').forEach(function(p) {
+                        p.addEventListener('click', function() {
+                            displayResult(p);
+                        });
+                    });
+                }
+            };
+            xhr.open("GET", "?query=" + query, true);
+            xhr.send();
+        }
+
+        function displayResult(element) {
+            var title = element.getAttribute('data-title');
+            var id = element.getAttribute('data-id');
+            var question = element.getAttribute('data-question');
+
+            // console.log('Selected ID:', id);
+            document.getElementById('question_Id').value = id;
+            document.getElementById('title-display').value = title;
+            document.getElementById('question-display').value = question;
+        }
+    </script>
 
 
 </head>
@@ -226,6 +244,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- <input type="hidden" name="project_code" value="<?php // safeOutput($project['project_code']) 
                                                                         ?>"> -->
                 <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+                    <?php if ($message) : ?>
+                        <div style="color: <?= $message_type == 'success' ? 'green' : 'red' ?>; text-align
+                        :center"><?= htmlspecialchars($message) ?></div>
+                    <?php endif; ?>
                     <div class="details-grid mb-4">
                         <div class="text-lg font-semibold">Language :
                             <span class="text-lg font-light">English</span>
@@ -248,63 +270,77 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
                         </div>
                     </div>
+
                     <div>
-                        <div>
-                            <div class="text-lg font-semibold mb-4">Title :
-                                <span class="text-lg font-light" id="title-display"></span>
+                        <form id="surveyForm" action="../Controller/prescreen_survey_data_save.php?project_code=<?= htmlspecialchars($project_code) ?>" method="POST">
+                            <input type="hidden" name="question_id" value="" id="question_Id">
+                            <input type="hidden" name="project_code" value="<?= safeOutput($project_code) ?>">
+                            <div>
+                                <div class="text-lg font-semibold mb-4">Title :
+                                    <input type="text" readonly class="text-lg font-light" id="title-display" value="" name="title" style="width:100%;background-color:white;">
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <div class="text-lg font-semibold my-2">Question :
-                                <span class="text-lg font-light" id="question-display"></span>
+                            <div>
+                                <div class="text-lg font-semibold my-2">Question :
+                                    <input type="text" readonly class="text-lg font-light" id="question-display" value="" name="question" style="width:100%;background-color:white;">
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <div class="text-lg font-semibold my-2">Control Type *:
-                                <select name="control" id="control" class="border-solid border-2 border-black rounded-lg px-4 py-2 ">
-                                    <option value="">-- Select Control Type --</option>
-                                    <option value="1">Text</option>
-                                    <option value="2">Radio</option>
-                                    <option value="3">DropDown</option>
-                                    <option value="4">Checkbox</option>
-                                </select>
+                            <div>
+                                <div class="text-lg font-semibold my-2">Control Type *:
+                                    <select name="control_type" id="control" class="border-solid border-2 border-black rounded-lg px-4 py-2">
+                                        <option value="">-- Select Control Type --</option>
+                                        <option value="Text">Text</option>
+                                        <option value="Radio">Radio</option>
+                                        <option value="DropDown">DropDown</option>
+                                        <option value="Checkbox">Checkbox</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex justify-end">
-                            <div class="text-center">
-                                <button type="submit" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 ml-3 rounded focus:outline-none focus:shadow-outline" id="saveButton" style="">Save</button>
+                            <div class="flex justify-end">
+                                <div class="text-center">
+                                    <button type="submit" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 ml-3 rounded focus:outline-none focus:shadow-outline" id="saveButton">Save</button>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 ml-3 rounded focus:outline-none focus:shadow-outline" id="cancelButton">Cancel</button>
+                                </div>
                             </div>
-                            <div class="text-center">
-                                <button type="submit" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 ml-3 rounded focus:outline-none focus:shadow-outline" id="saveButton" style="">Cancel</button>
-                            </div>
-                        </div>
+                        </form>
+
+
+
                     </div>
-
                 </div>
-                <!-- </form>-->
 
-                <table class="table">
-                    <thead>
+                <table class="table table-bordered">
+                    <thead>               
+                        
+
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">Category</th>
-                            <th scope="col">Sub Category</th>
-                            <th scope="col">Control</th>
+                            <th scope="col">Title</th>
                             <th scope="col">Question</th>
+                            <th scope="col">Control Type</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                        </tr>
+                        <?php if ($tableData->num_rows > 0) : ?>
+                            <?php while ($row = $tableData->fetch_assoc()) : ?>
+                                <tr>
+                                    <td><?= htmlspecialchars($row['id']) ?></td>
+                                    <td><?= htmlspecialchars($row['title']) ?></td>
+                                    <td><?= htmlspecialchars($row['question_text']) ?></td>
+                                    <td><?= htmlspecialchars($row['control_type']) ?></td>
+                                    <td><a href="delete_survey_question.php?id=<?= htmlspecialchars($row['id']) ?>" class="btn btn-danger btn-sm">Delete</a></td>
+                                </tr>
+                            <?php endwhile; ?>
+                        <?php else : ?>
+                            <tr>
+                                <td colspan="5" class="text-center">No survey questions found.</td>
+                            </tr>
+                        <?php endif; ?>
                     </tbody>
                 </table>
-
 
                 <?php //else: 
                 ?>
@@ -316,7 +352,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
 
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function(event) {
+            var questionId = document.getElementById('question_Id').value;
+            var controlType = document.getElementById('control').value;
+            var errorMessages = [];
 
+            if (!questionId) {
+                errorMessages.push("Please select a question.");
+            }
+            if (!controlType) {
+                errorMessages.push("Please select a control type.");
+            }
+
+            if (errorMessages.length > 0) {
+                event.preventDefault();
+                alert(errorMessages.join("\n"));
+            }
+        });
+    </script>
     <script>
         function toggleEdit() {
             var form = document.getElementById('projectForm');
