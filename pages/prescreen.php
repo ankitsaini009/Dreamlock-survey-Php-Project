@@ -8,8 +8,7 @@ $message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
 $message_type = isset($_SESSION['message_type']) ? $_SESSION['message_type'] : '';
 unset($_SESSION['message']);
 unset($_SESSION['message_type']);
-?>
-<?php
+
 function safeOutput($string)
 {
     return htmlspecialchars($string ?? '');
@@ -140,11 +139,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $conn->close();
 }
 
+// Create the survey_questions table  if it doesn't exist
+$checkTableQuery = "SHOW TABLES LIKE 'survey_questions'";
+$tableCheckResult = $conn->query($checkTableQuery);
+if ($tableCheckResult->num_rows == 0) {
 
-$fetchQuestion = "SELECT sq.id, q.title, q.question_text, sq.control_type
-          FROM survey_questions sq
-          JOIN questionnaire q ON sq.question_id = q.id";
-$tableData = $conn->query($fetchQuestion);
+    $createTableQuery = "CREATE TABLE survey_questions (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        question_id INT NOT NULL,
+        project_code VARCHAR(255) NOT NULL,
+        control_type ENUM('Text', 'Radio', 'DropDown', 'Checkbox') NOT NULL,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY (question_id) REFERENCES questionnaire(id) ON DELETE CASCADE
+    )";
+
+    if ($conn->query($createTableQuery) === TRUE) {
+        echo "Table survey_questions created successfully";
+    } else {
+        echo "Error creating table: " . $conn->error;
+    }
+}
+if (isset($_GET['project_code'])) {
+    $project_code = htmlspecialchars($_GET['project_code']);
+
+    // SQL query
+    $fetchQuestion = "SELECT sq.id, q.title, q.question_text, sq.control_type
+                      FROM survey_questions sq
+                      JOIN questionnaire q ON sq.question_id = q.id
+                      WHERE sq.project_code = ?";
+
+    $stmt = $conn->prepare($fetchQuestion);
+    $stmt->bind_param("s", $project_code);
+    $stmt->execute();
+
+    $result = $stmt->get_result();
+    $tableData = $result; // No need for fetch_all here if using while loop
+
+    $stmt->close();
+} else {
+    echo "Project Code not provided.";
+}
+
+// Close database connection
+$conn->close();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -175,44 +213,7 @@ $tableData = $conn->query($fetchQuestion);
             width: 400px
         }
     </style>
-    <script>
-        function searchQuestions(query) {
-            if (query.length == 0) {
-                document.getElementById("tesjd").innerHTML = "";
-                return;
-            }
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    var parser = new DOMParser();
-                    var doc = parser.parseFromString(xhr.responseText, 'text/html');
-                    var mainPanelContent = doc.querySelector('.main-panel').innerHTML;
-                    document.getElementById("tesjd").innerHTML = mainPanelContent;
-                    console.log('Extracted Content: ' + mainPanelContent);
 
-                    // Add click event listeners to search results
-                    document.querySelectorAll('#tesjd p').forEach(function(p) {
-                        p.addEventListener('click', function() {
-                            displayResult(p);
-                        });
-                    });
-                }
-            };
-            xhr.open("GET", "?query=" + query, true);
-            xhr.send();
-        }
-
-        function displayResult(element) {
-            var title = element.getAttribute('data-title');
-            var id = element.getAttribute('data-id');
-            var question = element.getAttribute('data-question');
-
-            // console.log('Selected ID:', id);
-            document.getElementById('question_Id').value = id;
-            document.getElementById('title-display').value = title;
-            document.getElementById('question-display').value = question;
-        }
-    </script>
 
 
 </head>
@@ -259,7 +260,7 @@ $tableData = $conn->query($fetchQuestion);
                             <label for="htmlfor">Search Question <span class="text-red-500">*</span></label>
                             <div class="flex w-full justify-between">
                                 <div class="search-container">
-                                    <input type="text" name="query" class="form-control" onkeyup="searchQuestions(this.value)">
+                                    <input type="text" name="query" class="form-control" onkeyup="searchQuestions(this.value)" id="search_question">
                                     <div id="tesjd" class="search-results"></div>
                                 </div>
                                 <div>
@@ -310,11 +311,10 @@ $tableData = $conn->query($fetchQuestion);
 
                     </div>
                 </div>
-
+                
+                <?php $counter = 1; ?>
                 <table class="table table-bordered">
-                    <thead>               
-                        
-
+                    <thead>
                         <tr>
                             <th scope="col">ID</th>
                             <th scope="col">Title</th>
@@ -327,11 +327,13 @@ $tableData = $conn->query($fetchQuestion);
                         <?php if ($tableData->num_rows > 0) : ?>
                             <?php while ($row = $tableData->fetch_assoc()) : ?>
                                 <tr>
-                                    <td><?= htmlspecialchars($row['id']) ?></td>
+                                   <td><?= $counter++ ?></td>
                                     <td><?= htmlspecialchars($row['title']) ?></td>
                                     <td><?= htmlspecialchars($row['question_text']) ?></td>
                                     <td><?= htmlspecialchars($row['control_type']) ?></td>
-                                    <td><a href="delete_survey_question.php?id=<?= htmlspecialchars($row['id']) ?>" class="btn btn-danger btn-sm">Delete</a></td>
+                                    <td>
+                                        <a href="../Controller/prescreen_survey_data_save.php?project_code=<?= urlencode($project_code) ?>&id=<?= urlencode($row['id']) ?>" class="btn btn-danger btn-sm">Delete</a>
+                                    </td>
                                 </tr>
                             <?php endwhile; ?>
                         <?php else : ?>
@@ -341,12 +343,6 @@ $tableData = $conn->query($fetchQuestion);
                         <?php endif; ?>
                     </tbody>
                 </table>
-
-                <?php //else: 
-                ?>
-                <!-- <p class="text-center text-red-500">No project details found.</p> -->
-                <?php //endif; 
-                ?>
             </div>
         </div>
     </div>
@@ -393,4 +389,43 @@ $tableData = $conn->query($fetchQuestion);
         }
     </script>
 
+    <script>
+        function searchQuestions(query) {
+            if (query.length == 0) {
+                document.getElementById("tesjd").innerHTML = "";
+                return;
+            }
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var parser = new DOMParser();
+                    var doc = parser.parseFromString(xhr.responseText, 'text/html');
+                    var mainPanelContent = doc.querySelector('.main-panel').innerHTML;
+                    document.getElementById("tesjd").innerHTML = mainPanelContent;
+                    console.log('Extracted Content: ' + mainPanelContent);
+
+                    // Add click event listeners to search results
+                    document.querySelectorAll('#tesjd p').forEach(function(p) {
+                        p.addEventListener('click', function() {
+                            displayResult(p);
+                        });
+                    });
+                }
+            };
+            xhr.open("GET", "?query=" + query, true);
+            xhr.send();
+        }
+
+        function displayResult(element) {
+            var title = element.getAttribute('data-title');
+            var id = element.getAttribute('data-id');
+            var question = element.getAttribute('data-question');
+
+            // console.log('Selected ID:', id);
+            document.getElementById('question_Id').value = id;
+            document.getElementById('title-display').value = title;
+            document.getElementById('question-display').value = question;
+            document.getElementById('search_question').value = question;
+        }
+    </script>
     <?php include '../include/footer.php'; ?>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../db2.php'; 
+include '../db2.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -16,38 +16,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errorMessage .= "Control Type is required.<br>";
     }
     if (!empty($errorMessage)) {
-   
+
         $_SESSION['message'] = $errorMessage;
         $_SESSION['message_type'] = 'error';
     } else {
-  
-        $tableCheckQuery = "SHOW TABLES LIKE 'survey_questions'";
-        $result = $conn->query($tableCheckQuery);
-
-        if ($result->num_rows == 0) {
-  // if table not create in DB then first automatic create 
-            $createTableQuery = "CREATE TABLE survey_questions (
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                question_id INT NOT NULL,
-                control_type ENUM('Text', 'Radio', 'DropDown', 'Checkbox') NOT NULL,
-                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                FOREIGN KEY (question_id) REFERENCES questionnaire(id) ON DELETE CASCADE
-            )";
-
-            if ($conn->query($createTableQuery) === TRUE) {
-                $_SESSION['message'] = "Table 'survey_questions' created successfully.";
-                $_SESSION['message_type'] = 'success';
-            } else {
-                $_SESSION['message'] = "Error creating table: " . $conn->error;
-                $_SESSION['message_type'] = 'error';
-            }
-        }
-
 
         if (!empty($question_id) && !empty($control_type)) {
-    
-            $stmt = $conn->prepare("INSERT INTO survey_questions (question_id, control_type) VALUES (?, ?)");
-            $stmt->bind_param("is", $question_id, $control_type);
+
+            $stmt = $conn->prepare("INSERT INTO survey_questions (question_id, project_code, control_type) VALUES (?, ?, ?)");
+            $stmt->bind_param("iss", $question_id, $project_code, $control_type);
 
 
             if ($stmt->execute()) {
@@ -58,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['message_type'] = 'error';
             }
 
-  
+
             $stmt->close();
         }
     }
@@ -66,7 +43,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     header("Location: ../pages/prescreen.php?project_code=" . urlencode($project_code));
     exit();
-
-    // Close the database connection
     $conn->close();
+
+
+  
+}
+
+
+
+if (isset($_GET['id'])) {
+    $id = intval($_GET['id']);
+    $project_code = htmlspecialchars($_GET['project_code']);
+    $stmt = $conn->prepare("DELETE FROM survey_questions WHERE id = ?");
+    $stmt->bind_param("i", $id);
+
+    if ($stmt->execute()) {
+        $_SESSION['message'] = "Survey question deleted successfully!";
+        $_SESSION['message_type'] = 'success';
+    } else {
+        $_SESSION['message'] = "Error: " . $stmt->error;
+        $_SESSION['message_type'] = 'error';
+    }
+
+
+ 
+    header("Location: ../pages/prescreen.php?project_code=" . urlencode($project_code));
+    exit();
+    $stmt->close();
+} else {
+    echo "Invalid ID";
 }
