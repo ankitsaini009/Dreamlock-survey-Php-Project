@@ -168,14 +168,19 @@ if (isset($_GET['project_code'])) {
                       JOIN questionnaire q ON sq.question_id = q.id
                       WHERE sq.project_code = ?";
 
-    $stmt = $conn->prepare($fetchQuestion);
-    $stmt->bind_param("s", $project_code);
-    $stmt->execute();
+    // Prepare statement
+    if ($stmt = $conn->prepare($fetchQuestion)) {
+        $stmt->bind_param("s", $project_code);
+        $stmt->execute();
 
-    $result = $stmt->get_result();
-    $tableData = $result; // No need for fetch_all here if using while loop
+        $result = $stmt->get_result();
+        $tableData = $result; // No need for fetch_all here if using while loop
 
-    $stmt->close();
+        $stmt->close();
+    } else {
+        // Error in preparing statement
+        echo "Error in preparing statement: " . $conn->error;
+    }
 } else {
     echo "Project Code not provided.";
 }

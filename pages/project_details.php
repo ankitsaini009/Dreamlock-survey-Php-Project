@@ -118,6 +118,57 @@
         $stmt->close();
         closeConnection($conn);
     }
+
+    if (isset($_GET['project_code'])) {
+        $project_code_query = $_GET['project_code'];
+        
+        $conn = openConnection();
+        
+        if ($conn === false) {
+            die("Database connection failed.");
+        }
+        
+        $sql_query = "SELECT filters FROM ProjectDetails WHERE project_code = ?";
+        $stmt_query = $conn->prepare($sql_query);
+        
+        if ($stmt_query === false) {
+            die("Prepare failed: " . $conn->error);
+        }
+        
+        // Bind parameter as string
+        $stmt_query->bind_param("s", $project_code_query);
+        $stmt_query->execute();
+        $result_query = $stmt_query->get_result();
+        
+        if ($result_query === false) {
+            die("Query failed: " . $stmt_query->error);
+        }
+        
+        $project_data = $result_query->fetch_assoc();
+        if ($project_data === null) {
+            die("No project found.");
+        }
+        
+        // Decode the filters JSON
+        $filters_json = json_decode($project_data['filters'], true);
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            $filters_json = [];
+            echo "JSON decoding error: " . json_last_error_msg() . "<br>";
+        }
+        
+        // Check if 'pre_screen' key is available
+        // if (isset($filters_json['pre_screen'])) {
+        //     echo "pre_screen is available. Value: " . htmlspecialchars($filters_json['pre_screen']);
+        // } else {
+        //     echo "pre_screen is not available.";
+        // }
+        
+        $stmt_query->close();
+        closeConnection($conn);
+    } else {
+        die("Project code not provided.");
+    }
+    
 ?>
 
 <!DOCTYPE html>
@@ -140,9 +191,16 @@
                     <div class="relative ">
                         <div class="flex">
                         <h1 class="text-2xl font-bold ml-2 cursor-pointer bg-purple-500 text-white px-4 py-1 rounded-t-xl">Project Details</h1>
-                        <a href="prescreen.php?project_code=<?= safeOutput($project_code) ?>" class="text-purple-500">
-                            <h1 class="text-2xl font-bold ml-2 cursor-pointer px-4 py-1">PreScreen</h1>
-                        </a>
+                        <?php
+                            if (isset($filters['pre_screen']) && $filters['pre_screen'] == 0) {
+                            ?>
+                                <a href="prescreen.php?project_code=<?= htmlspecialchars($project_code) ?>" class="text-purple-500">
+                                    <h1 class="text-2xl font-bold ml-2 cursor-pointer px-4 py-1">PreScreen</h1>
+                                </a>
+                            <?php
+                            }
+                            ?>
+
                         <a href="project_mapping.php?project_code=<?= safeOutput($project_code) ?>" class="text-purple-500">
                             <h1 class="text-2xl font-bold ml-2 cursor-pointer px-4 py-1">Project Mapping</h1>
                         </a>
