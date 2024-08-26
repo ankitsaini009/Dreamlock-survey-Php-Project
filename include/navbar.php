@@ -42,7 +42,7 @@
                 <a class="dropdown-item" href="#">
                   <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="login/logout.php">
+                <a class="dropdown-item" href="../login/logout.php">
                   <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
               </div>
             </li>
@@ -175,7 +175,7 @@
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <span class="menu-title">Report</span>
                 <i class="menu-arrow"></i>
@@ -215,7 +215,7 @@
                   </li>       
                 </ul>
               </div>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <!-- partial -->

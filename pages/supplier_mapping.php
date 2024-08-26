@@ -58,7 +58,6 @@ function generateEndPageLinks($hash_identifier)
 // Handle form submission for adding/updating supplier mappings
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $conn = openConnection();
-
     $project_code = $_POST['project_code'];
     $supplier_id = $_POST['supplier_id'];
     $supplier_quota = $_POST['supplier_quota'];
@@ -75,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $sql = "INSERT INTO SurveyLog (project_code, Supplier_Id, Supplier_Identifier, Hash_Identifier, Status, LOI, IP_Address, Country, Browser_Detail, Device_Type, Is_Test_Link)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $status = "Complete"; // Placeholder, should be dynamic
+    $status = "C"; // Placeholder, should be dynamic
     $loi = 0; // Placeholder, should be dynamic
     $ip_address = ""; // Placeholder, should be dynamic
     $country = ""; // Placeholder, should be dynamic
@@ -86,16 +85,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("ssssssisssi", $project_code, $supplier_id, $supplier_identifier, $hash_identifier, $status, $loi, $ip_address, $country, $browser_detail, $device_type, $is_test_link);
 
     if ($stmt->execute()) {
-        $project_code = htmlspecialchars($_POST['project_code']);
-        echo "<p class='text-green-500'>Supplier mapping saved successfully.</p>";
-        echo "<script type='text/javascript'>
-            setTimeout(function() {
-                window.location.href = 'project_details.php?project_code=" . urlencode($project_code) . "';
-            }, 1000); // Redirect after 1 second
-          </script>";
-        exit;
+
+        $myquery = "INSERT INTO smapping (supplier_name, project_code, supplier_id, supplier_quota, click_quota, CPI, complete_url, terminate_url, quality_term_url, survey_close_url, over_quota_url,supplier_code,live_link, test_link, created_at)
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,NOW())";
+
+        $sql3 = "SELECT * FROM suppliers WHERE supplier_id = ?";
+        $stmt3 = $conn->prepare($sql3);
+        $stmt3->bind_param("s", $_POST['supplier_id']);
+        $stmt3->execute();
+        $result2 = $stmt3->get_result();
+        $projectdata = $result2->fetch_assoc();
+
+        $sql4 = "SELECT * FROM projectdetails WHERE project_code = ?";
+        $stmt4 = $conn->prepare($sql4);
+        $stmt4->bind_param("s", $project_code);
+        $stmt4->execute();
+        $result3 = $stmt4->get_result();
+        $projectdata2 = $result3->fetch_assoc();
+        $mylinks = $projectdata2['links'];
+        $decodedLinks = json_decode($mylinks, true);
+
+        $stmt22 = $conn->prepare($myquery);
+        $supplier_name = $projectdata['supplier_name'];
+        $supplier_code = $projectdata['supplier_code'];
+        $live_link = $decodedLinks[0]['live'];
+        $test_link = $decodedLinks[0]['test'];
+        $stmt22->bind_param("ssiiisssssssss", $supplier_name, $project_code, $supplier_id, $supplier_quota, $click_quota, $CPI, $complete_url, $terminate_url, $quality_term_url, $survey_close_url, $over_quota_url, $supplier_code, $live_link, $test_link);
+
+        if ($stmt22->execute()) {
+            $project_code = htmlspecialchars($_POST['project_code']);
+            echo "<p class='text-green-500'>Supplier mapping saved successfully.</p>";
+            echo "<script type='text/javascript'>
+                setTimeout(function() {
+                    window.location.href = 'project_details.php?project_code=" . urlencode($project_code) . "';
+                }, 1000); // Redirect after 1 second
+              </script>";
+            exit;
+        } else {
+            echo "<p class='text-red-500'>ERROR: Could not execute the smapping query. " . htmlspecialchars($stmt2->error) . "</p>";
+        }
+
+        $stmt2->close();
     } else {
-        echo "<p class='text-red-500'>ERROR: Could not execute the query. " . htmlspecialchars($stmt->error) . "</p>";
+        echo "<p class='text-red-500'>ERROR: Could not execute the SurveyLog query. " . htmlspecialchars($stmt->error) . "</p>";
     }
 
     $stmt->close();
@@ -191,8 +223,8 @@ closeConnection($conn);
                             <tr>
                                 <td class="px-6 py-4 border-b border-gray-300"><?= $index + 1 ?></td>
                                 <td class="px-6 py-4 border-b border-gray-300"><?= safeOutput($mapping['supplier_name']) ?></td>
-                                <td class="px-6 py-4 border-b border-gray-300"><?= "http://localhost/app.dreamlock/pages/start_survey.php?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) ?></td>
-                                <td class="px-6 py-4 border-b border-gray-300"><?= "http://localhost/app.dreamlock/pages/start_survey.php?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) . "&status=test" ?></td>
+                                <td class="px-6 py-4 border-b border-gray-300"><?= "http://localhost/app.dreamlock/pages/demographics.php?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) ?></td>
+                                <td class="px-6 py-4 border-b border-gray-300"><?= "http://localhost/app.dreamlock/pages/demographics.php?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) . "&status=test" ?></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

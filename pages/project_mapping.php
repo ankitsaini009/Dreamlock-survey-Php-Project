@@ -9,7 +9,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-function loadEnv($file) {
+function loadEnv($file)
+{
     if (file_exists($file)) {
         $lines = file($file);
         foreach ($lines as $line) {
@@ -29,7 +30,7 @@ function loadEnv($file) {
 }
 
 // Load the .env file
-loadEnv(__DIR__ . '../../.env'); 
+loadEnv(__DIR__ . '../../.env');
 
 function openConnection()
 {
@@ -187,52 +188,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $stmt->close();
-
 }
 if (isset($_GET['project_code'])) {
     $project_code_query = $_GET['project_code'];
-    
+
     $conn = openConnection();
-    
+
     if ($conn === false) {
         die("Database connection failed.");
     }
-    
+
     $sql_query = "SELECT filters FROM ProjectDetails WHERE project_code = ?";
     $stmt_query = $conn->prepare($sql_query);
-    
+
     if ($stmt_query === false) {
         die("Prepare failed: " . $conn->error);
     }
-    
+
     // Bind parameter as string
     $stmt_query->bind_param("s", $project_code_query);
     $stmt_query->execute();
     $result_query = $stmt_query->get_result();
-    
+
     if ($result_query === false) {
         die("Query failed: " . $stmt_query->error);
     }
-    
+
     $project_data = $result_query->fetch_assoc();
     if ($project_data === null) {
         die("No project found.");
     }
-    
+
     // Decode the filters JSON
     $filters_json = json_decode($project_data['filters'], true);
     if (json_last_error() !== JSON_ERROR_NONE) {
         $filters_json = [];
         echo "JSON decoding error: " . json_last_error_msg() . "<br>";
     }
-    
+
     // Check if 'pre_screen' key is available
     // if (isset($filters_json['pre_screen'])) {
     //     echo "pre_screen is available. Value: " . htmlspecialchars($filters_json['pre_screen']);
     // } else {
     //     echo "pre_screen is not available.";
     // }
-    
+
     $stmt_query->close();
     closeConnection($conn);
 } else {
@@ -293,14 +293,14 @@ if (isset($_GET['project_code'])) {
                             <h1 class="text-2xl font-bold ml-2 cursor-pointer px-4 py-1">Project Details</h1>
                         </a>
                         <?php
-                            if (isset($filters['pre_screen']) && $filters['pre_screen'] == 0) {
-                            ?>
-                        <a href="prescreen.php?project_code=<?= safeOutput($project_code) ?>" class="text-purple-500">
-                            <h1 class="text-2xl font-bold ml-2 cursor-pointer px-4 py-1 ">PreScreen</h1>
-                        </a>
+                        if (isset($filters['pre_screen']) && $filters['pre_screen'] == 1) {
+                        ?>
+                            <a href="prescreen.php?project_code=<?= safeOutput($project_code) ?>" class="text-purple-500">
+                                <h1 class="text-2xl font-bold ml-2 cursor-pointer px-4 py-1 ">PreScreen</h1>
+                            </a>
                         <?php
-                            }
-                            ?>
+                        }
+                        ?>
                         <h1 class="text-2xl font-bold ml-2 cursor-pointer bg-purple-500 text-white rounded-t-xl px-4 py-1">Project Mapping</h1>
                     </div>
                     <div class="absolute top-0 right-3 ">
@@ -319,20 +319,27 @@ if (isset($_GET['project_code'])) {
                             </tr>
                         </thead>
                         <tbody>
-                        <?php
-                                    $base_url = getenv('PROJECT_URL'); 
-
-                                    foreach ($supplier_mappings as $index => $mapping) :
-                                    ?>
-                                        <tr>
-                                            <td class="px-6 py-4 border-b border-gray-300"><?= $index + 1 ?></td>
-                                            <td class="px-6 py-4 border-b border-gray-300"><?= safeOutput($mapping['supplier_name']) ?></td>
-                                            <td class="px-6 py-4 border-b border-gray-300"><?= $base_url . "?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) ?></td>
-                                            <td class="px-6 py-4 border-b border-gray-300"><?= $base_url . "?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) . "&status=test" ?></td>
-                                        </tr>
+                            <?php
+                            $base_url = getenv('PROJECT_URL');
+                            foreach ($supplier_mappings as $index => $mapping) :
+                            ?>
+                                <tr>
+                                    <td class="px-6 py-4 border-b border-gray-300"><?= $index + 1 ?></td>
+                                    <td class="px-6 py-4 border-b border-gray-300"><?= safeOutput($mapping['supplier_name']) ?></td>
                                     <?php
-                                    endforeach;
+                                    if (isset($filters['pre_screen']) && $filters['pre_screen'] == 1) {
                                     ?>
+                                        <td class="px-6 py-4 border-b border-gray-300"><a target="_blank" href="<?= " demographics.php?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) ?>"><?= $base_url."demographics.php?project_code=". safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) ?></a></td>
+                                    <?php
+                                    } else {
+                                    ?>
+                                        <td class="px-6 py-4 border-b border-gray-300"><a target="_blank" href="<?= " start_survey.php?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) ?>"><?= $base_url."start_survey.php?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) ?></a></td>
+                                    <?php } ?>
+                                    <td class="px-6 py-4 border-b border-gray-300"><?= $base_url . "?project_code=" . safeOutput($project_code) . "&supplier_identifier=" . safeOutput($mapping['Supplier_Identifier']) . "&status=test" ?></td>
+                                </tr>
+                            <?php
+                            endforeach;
+                            ?>
 
 
                         </tbody>

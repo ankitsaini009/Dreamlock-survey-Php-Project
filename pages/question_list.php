@@ -19,6 +19,8 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
+        $created_at = date("Y-m-d H:i:s");
+        $updated_at = date("Y-m-d H:i:s");
 
         // Handle form submission for adding or editing a question
         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['title']) && isset($_POST['question']) && isset($_POST['category'])) {
@@ -29,7 +31,9 @@
 
             if (!empty($_POST['edit_question_id'])) {
                 $edit_question_id = $_POST['edit_question_id'];
-                $sql = "UPDATE questionnaire SET category_id='$category_id', title='$title', question_text='$question', options='" . json_encode($options) . "' WHERE id=$edit_question_id";
+                $sql = "UPDATE questionnaire 
+                SET category_id='$category_id', title='$title', question_text='$question', options='" . json_encode($options) . "', updated_at='$updated_at' 
+                WHERE id=$edit_question_id";
                 if ($conn->query($sql) === TRUE) {
                 
                     //session_start();
@@ -47,7 +51,9 @@
                     echo "Error: " . $sql . "<br>" . $conn->error;
                 }
             } else {
-                $sql = "INSERT INTO questionnaire (category_id, title, question_text, options) VALUES ('$category_id', '$title', '$question', '" . json_encode($options) . "')";
+                $sql = "INSERT INTO questionnaire (category_id, title, question_text, options , created_at) VALUES ('$category_id', '$title', '$question', '" . json_encode($options) . "')";
+                $sql = "INSERT INTO questionnaire (category_id, title, question_text, options, created_at, updated_at)  VALUES ('$category_id', '$title', '$question', '" . json_encode($options) . "', '$created_at', '$updated_at')";
+
                 if ($conn->query($sql) === TRUE) {
                     //$_SESSION['message'] = 'Your Quetions was successful!';
                     echo "<script>alert(' Quetions Added successful!');</script>";
@@ -183,5 +189,60 @@
         </tbody>
     </table>
 </div>
+
+<script>
+    // Function to add an option to the list
+    function addOption() {
+        var txtoptions = document.getElementById("txtoptions").value.trim();
+        if (txtoptions !== "") {
+            var optionList = document.getElementById("Optionlist");
+            var option = document.createElement("option");
+            option.value = txtoptions;
+            option.text = txtoptions;
+            optionList.add(option);
+
+            document.getElementById("txtoptions").value = ""; // Clear input after adding
+        } else {
+            alert("Please enter an option.");
+        }
+    }
+
+    // Function to remove an option from the list
+    function removeOption(selectElement) {
+        if (selectElement.selectedIndex >= 0) {
+            selectElement.remove(selectElement.selectedIndex);
+        } else {
+            alert("Please select an option to remove.");
+        }
+    }
+
+    // Collect options into a hidden input before submitting the form
+    function collectOptions() {
+        var optionList = document.getElementById("Optionlist");
+        var options = [];
+        for (var i = 0; i < optionList.options.length; i++) {
+            options.push(optionList.options[i].value);
+        }
+        document.getElementById("options").value = JSON.stringify(options);
+    }
+
+    // Populate the form for editing a question
+    function editQuestion(id, title, question, category_id, options) {
+        document.getElementById("edit_question_id").value = id;
+        document.getElementById("title").value = title;
+        document.getElementById("question").value = question;
+        document.getElementById("category").value = category_id;
+
+        var optionList = document.getElementById("Optionlist");
+        optionList.innerHTML = ""; // Clear current options
+        var opts = JSON.parse(options);
+        for (var i = 0; i < opts.length; i++) {
+            var option = document.createElement("option");
+            option.value = opts[i];
+            option.text = opts[i];
+            optionList.add(option);
+        }
+    }
+</script>
 
 <?php include '../include/footer.php'; ?>

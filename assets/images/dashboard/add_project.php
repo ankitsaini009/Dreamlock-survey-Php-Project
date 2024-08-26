@@ -3,12 +3,13 @@ include  '../include/header.php';
 include  '../include/navbar.php';
 include '../db2.php';
 ?>
+
 <div class="content-wrapper">
     <div class="row">
         <div class="col-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title font-bold text-2xl">Add Group Project</h4>
+                    <h4 class="card-title font-bold text-2xl">Add New Project</h4>
                     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="forms-sample">
                         <div class="flex form-group">
                             <div class="mr-4" style="width:600px;">
@@ -126,42 +127,43 @@ include '../db2.php';
                             </div>
                         </div>
 
-                        <!-- <div>
+                        <div>
                             <label for="filters" class="block text-gray-700 text-sm font-bold mb-2">Project Filters:</label>
-                        </div> -->
-                        <!-- <div class="flex justify-between form-group mb-4">
-                            <div class="row"> -->
-                        <!-- <div class="col-md-6">
+                        </div>
+                        <div class="flex justify-between form-group mb-4">
+                            <div class="row">
+                                <div class="col-md-6">
                                     <label class="mb-4"><input type="checkbox" name="geo_location" value="1"> Geo Location</label><br>
                                     <label class="mb-4"><input type="checkbox" name="tsign" value="1"> TSign</label><br>
                                     <label class="mb-4"><input type="checkbox" name="captcha" value="1"> Captcha</label><br>
-                                    <label class="mb-4"><input type="checkbox" name="pre_screen" value="1"> PreScreen</label> -->
-                        <!-- Second Column -->
-                        <!-- Unique IP and Speeder with Input Fields -->
-                        <!-- <div class="col-md-8">
+                                    <label class="mb-4"><input type="checkbox" name="pre_screen" value="1"> PreScreen</label>
+                                    <!-- Second Column -->
+                                    <!-- Unique IP and Speeder with Input Fields -->
+                                    <div class="col-md-8">
                                         <div class="mb-2">
-                                            <label ><input type="checkbox" name="unique_ip" value="1" id="unique_ip_checkbox">Unique IP</label>
+                                            <label><input type="checkbox" name="unique_ip" value="1" id="unique_ip_checkbox">Unique IP</label>
                                             <input type="number" name="unique_ip_count" id="unique_ip_count" placeholder="IP Count" class=" shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" disabled>
                                         </div>
                                         <br>
                                         <div class="mb-4">
-                                            <label ><input type="checkbox" name="speeder" value="1" id="speeder_checkbox"> Speeder</label>
+                                            <label><input type="checkbox" name="speeder" value="1" id="speeder_checkbox"> Speeder</label>
                                             <input type="number" name="speeder_threshold" id="speeder_threshold" placeholder="Speed Threshold" class=" shadow appearance-none border rounded py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" disabled>
                                         </div>
                                     </div>
-                                </div> -->
-                        <!-- </div> -->
-                        <!-- Third Column -->
-                        <!-- <div class="col-md-6">
+                                </div>
+                                <!-- <br> -->
+                            </div>
+                            <!-- Third Column -->
+                            <div class="col-md-6">
                                 <label class="mb-4"><input type="checkbox" name="exclude" value="1"> Exclude</label><br>
                                 <label class="mb-4"><input type="checkbox" name="proxy_vpn" value="1"> Proxy/VPN</label><br>
                                 <label class="mb-4"><input type="checkbox" name="url_protection" value="1"> Url Protection</label><br>
-                                <label class="mb-4"><input type="checkbox" name="dynamic_thanks_url" value="1"> Dynamic Thanks Url</label><br>                                
+                                <label class="mb-4"><input type="checkbox" name="dynamic_thanks_url" value="1"> Dynamic Thanks Url</label><br>
                                 <label class="mb-4"><input type="checkbox" name="mobile_study" value="1"> Mobile Study</label><br>
                                 <label class="mb-4"><input type="checkbox" name="tablet_study" value="1"> Tablet Study</label><br>
-                                <label class="mb-4"><input type="checkbox" name="desktop_study" value="1"> Desktop Study</label>                            
+                                <label class="mb-4"><input type="checkbox" name="desktop_study" value="1"> Desktop Study</label>
                             </div>
-                        </div>                        -->
+                        </div>
                         <div>
                             <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
                             <button class="btn btn-light">Cancel</button>
@@ -176,7 +178,6 @@ include '../db2.php';
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include '../db2.php';  // Ensure database connection is configured correctly
-    //print_r($_SERVER["REQUEST_METHOD"]);
 
     // Function to generate the next project code
     function generateProjectCode($conn)
@@ -258,10 +259,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //echo "<p class='text-green-500'>Records added successfully with Project Code: $project_code.</p>";
         //echo "<script>alert('Records added successfully with Project Code: $project_code.');</script>";
         ///header( "Location: pages/project_details.php" );
-        //$_SESSION['message'] = 'Add project save was successful!';
-        // Redirect to dashboard
-        //header('Location: dashboard.php');
-        echo "<p class='text-green-500'>Add group saved successfully.</p>";
+        echo "<p class='text-green-500'>Add Project saved successfully.</p>";
         echo "<script type='text/javascript'>
             setTimeout(function() {
                 window.location.href = 'index.php';

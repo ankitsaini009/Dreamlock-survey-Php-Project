@@ -1,10 +1,10 @@
 <?php
 // Database configuration local server settings 
-    $hostname = 'localhost';
-    $username = 'root';
-    $password = '';
-    $database = 'pmtool_db';
-    $port = 3306;
+$hostname = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'pmtool_db';
+$port = 3306;
 
 $conn = new mysqli($hostname, $username, $password, $database);
 
@@ -12,6 +12,12 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+// function prd($a)
+// {
+//     echo '<pre>';
+//     print_r($a);
+//     die;
+// }
 //echo "Connected successfully"; // This is for testing; you might want to remove this line in production.
 
 // You can close the connection when done, but usually, it's done at the end of the script.
@@ -48,4 +54,3 @@ if ($conn->connect_error) {
 // if ($conn->connect_error) {
 //     die("Connection failed: " . $conn->connect_error);
 // }
-?>

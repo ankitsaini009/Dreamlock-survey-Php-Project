@@ -1,12 +1,14 @@
 <?php
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+// Enable error reporting for debugging
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-function openConnection() {
+function openConnection()
+{
     $hostname = 'localhost';
-    $username = 'pmtool_db';
-    $password = 'Admin@123[];';
+    $username = 'root';
+    $password = '';
     $database = 'pmtool_db';
     $port = 3306;
 
@@ -18,11 +20,13 @@ function openConnection() {
     return $conn;
 }
 
-function closeConnection($conn) {
+function closeConnection($conn)
+{
     $conn->close();
 }
 
-function logSurveyEnd($hash_identifier, $status) {
+function logSurveyEnd($hash_identifier, $status)
+{
     $conn = openConnection();
     $sql = "UPDATE SurveyLog SET Status = ?, Survey_End_Date = NOW(), time_stamp = NOW() WHERE Hash_Identifier = ?";
     $stmt = $conn->prepare($sql);
@@ -39,7 +43,8 @@ function logSurveyEnd($hash_identifier, $status) {
     closeConnection($conn);
 }
 
-function calculateLOI($start_date) {
+function calculateLOI($start_date)
+{
     if ($start_date) {
         $start_time = strtotime($start_date);
         $end_time = time();
@@ -53,45 +58,79 @@ function calculateLOI($start_date) {
     return '00:00';
 }
 
-function getRedirectLink($status, $supplier_id) {
-    switch ($status) {
-        case 'C':
-            return 'https://pmt.dreamlockmr.com/complete';
-        case 'T':
-            return 'https://pmt.dreamlockmr.com/terminate';
-        case 'QT':
-            return 'https://pmt.dreamlockmr.com/quality_term';
-        case 'Q':
-            return 'https://pmt.dreamlockmr.com/over_quota';
-        default:
-            return null;
+function getRedirectLink($status, $project_code, $supplier_code, $hashidentifier)
+{
+    $conn = openConnection();
+    $status = strtoupper($status);  // Ensure status is uppercase
+
+    $sql = "SELECT complete_url, terminate_url, quality_term_url, survey_close_url, over_quota_url 
+            FROM SMapping 
+            WHERE project_code = ? AND supplier_code = ?";
+    $stmt = $conn->prepare($sql);
+    if ($stmt === false) {
+        error_log("Prepare failed: " . $conn->error);
+        die("Prepare failed: " . $conn->error);
     }
+    $stmt->bind_param("ss", $project_code, $supplier_code);
+    if (!$stmt->execute()) {
+        error_log("Execute failed: " . $stmt->error);
+        die("Execute failed: " . $stmt->error);
+    }
+    $result = $stmt->get_result();
+    $supplier = $result->fetch_assoc();
+
+    if (!$supplier) {
+        error_log("No matching record found in SMapping for project_code: '$project_code' and supplier_code: '$supplier_code'");
+        return null;
+    }
+
+
+    $redirect_links = [
+        'C' => $supplier['complete_url'],
+        'T' => $supplier['terminate_url'],
+        'F' => $supplier['quality_term_url'],
+        'SC' => $supplier['survey_close_url'],
+        'Q' => $supplier['over_quota_url']
+    ];
+
+    $redirect_url = $redirect_links[$status] ?? null;
+
+    if ($redirect_url) {
+
+        // Replace [identifier] with $hashidentifier in the specific redirect URL
+        if (strpos($redirect_url, "&uid=[identifier]") !== false) {
+            $redirect_url = str_replace("[identifier]", $hashidentifier, $redirect_url);
+        }
+
+        $update_sql = "UPDATE `surveylog` SET `Status` = ? WHERE `Hash_Identifier` = ?";
+        $update_stmt = $conn->prepare($update_sql);
+        if ($update_stmt === false) {
+            error_log("Prepare failed for update: " . $conn->error);
+            die("Prepare failed for update: " . $conn->error);
+        }
+        $update_stmt->bind_param("ss", $status, $hashidentifier);
+        // echo '<pre>';
+        // print_r($update_stmt);
+        // die;
+        if (!$update_stmt->execute()) {
+            error_log("Execute failed for update: " . $update_stmt->error);
+            die("Execute failed for update: " . $update_stmt->error);
+        }
+        $update_stmt->close();
+    }
+
+    closeConnection($conn);
+    return $redirect_url;
 }
 
-function getMessage($status) {
+function getMessage($status)
+{
     $messages = [
-        'null' => 'The username is not valid.',
-        'RT' => 'The user does not exist.',
-        'QC' => 'Duplicate user.',
-        'OC' => 'The project is on hold, please try again later.',
-        'OE' => 'The project is on hold, please try again later.',
-        'QA' => 'Thanks for participating! However, you are not eligible for this survey.',
-        'QE' => 'Thanks for participating! However, you are not eligible for this survey.',
-        'PR' => 'Thanks for participating! However, you are not eligible for this survey.',
-        'QD' => 'Thanks for participating! However, you are not eligible for this survey.',
-        'SF' => 'Thanks for participating! However, you are not eligible for this survey.',
-        'OB' => 'Thanks for participating! We have got the required number of responses. We look forward to your participation in other surveys.',
-        'OH' => 'The survey is paused, please try again later.',
-        'SC' => 'Thanks for participating! However, the survey has been closed. We look forward to your participation in other surveys.',
-        'QP' => 'Thanks for participating! However, you are not eligible for this survey.',
-        'OD' => 'Thanks for participating! We have got the required number of responses. We look forward to your participation in other surveys.',
-        'FU' => 'Thanks for participating! However, you are not eligible for this survey.',
-        'D' => 'You are qualified to participate in the survey. Please wait while the main survey loads.',
         'C' => 'Thanks for participating! You have completed this survey successfully. Your participation status will be updated soon!',
         'T' => 'Thanks for participating! However, you are not eligible for this survey.',
-        'Q' => 'Thanks for participating! We have got the required number of responses. We look forward to your participation in other surveys.',
         'F' => 'Thanks for participating! However, you are not eligible for this survey.',
-        'R' => 'Valid user rejected by the client, manual update in the database.',
+        'SC' => 'Thanks for participating! However, the survey has been closed. We look forward to your participation in other surveys.',
+        'Q' => 'Thanks for participating! We have got the required number of responses. We look forward to your participation in other surveys.',
     ];
 
     return $messages[$status] ?? 'Invalid status';
@@ -99,10 +138,10 @@ function getMessage($status) {
 
 if (isset($_GET['hash_identifier']) && isset($_GET['status'])) {
     $hash_identifier = $_GET['hash_identifier'];
-    $status = $_GET['status'];
+    $status = strtoupper($_GET['status']); // Ensure status is uppercase
 
     $conn = openConnection();
-    $sql = "SELECT * FROM SurveyLog WHERE Hash_Identifier = ?";
+    $sql = "SELECT project_code, supplier_code, Hash_Identifier FROM SurveyLog WHERE Hash_Identifier = ?";
     $stmt = $conn->prepare($sql);
     if ($stmt === false) {
         error_log("Prepare failed: " . $conn->error);
@@ -118,25 +157,11 @@ if (isset($_GET['hash_identifier']) && isset($_GET['status'])) {
     $stmt->close();
 
     if ($surveyLog) {
-        $survey_start_date = $surveyLog['Survey_Start_Date'];
-        $loi = calculateLOI($survey_start_date);
+        $project_code = $surveyLog['project_code'];
+        $supplier_code = $surveyLog['supplier_code'];
+        $hashidentifier = $surveyLog['Hash_Identifier'];
 
-        // Update survey end details
-        $sql = "UPDATE SurveyLog SET Status = ?, Survey_End_Date = NOW(), LOI = ?, time_stamp = NOW() WHERE Hash_Identifier = ?";
-        $stmt = $conn->prepare($sql);
-        if ($stmt === false) {
-            error_log("Prepare failed: " . $conn->error);
-            die("Prepare failed: " . $conn->error);
-        }
-        $stmt->bind_param("sss", $status, $loi, $hash_identifier);
-        if (!$stmt->execute()) {
-            error_log("Execute failed: " . $stmt->error);
-            die("Execute failed: " . $stmt->error);
-        }
-        $stmt->close();
-
-        // Get the redirection link based on the status
-        $redirect_url = getRedirectLink($status, $surveyLog['Supplier_Id']);
+        $redirect_url = getRedirectLink($status, $project_code, $supplier_code, $hashidentifier);
         $message = getMessage($status);
     } else {
         $redirect_url = null;
@@ -145,6 +170,7 @@ if (isset($_GET['hash_identifier']) && isset($_GET['status'])) {
 
     closeConnection($conn);
 
+    // Output the redirect URL to the page for JavaScript to use
     echo "<!DOCTYPE html>
     <html lang='en'>
     <head>
@@ -182,13 +208,18 @@ if (isset($_GET['hash_identifier']) && isset($_GET['status'])) {
     <body>
         <div class='container'>
             <h1>$message</h1>";
-    
     if ($redirect_url) {
         echo "<p>Redirecting...</p>
-            <meta http-equiv='refresh' content='5;url=$redirect_url'>";
+              <script>
+                  setTimeout(function() {
+                      window.location.href = '$redirect_url';
+                  }, 500); // Redirect after 5 seconds
+              </script>";
+    } else {
+        echo "<p>No redirection URL found for the given status and supplier.</p>";
     }
-    
-    echo "</div>
+
+    echo "</div></div>
     </body>
     </html>";
     exit();
@@ -196,4 +227,3 @@ if (isset($_GET['hash_identifier']) && isset($_GET['status'])) {
     error_log("Invalid request: Missing hash_identifier or status.");
     die("Invalid request: Missing hash_identifier or status.");
 }
-?>
